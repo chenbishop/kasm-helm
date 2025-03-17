@@ -1,5 +1,6 @@
 annotations:
-  category: Virtual Desktop
+  catalog.cattle.io/display-name: Kasm
+  catalog.cattle.io/release-name: kasm
   images: |
     - name: api-wait-container
       image: alpine/curl:8.8.0
