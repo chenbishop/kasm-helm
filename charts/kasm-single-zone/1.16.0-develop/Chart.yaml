@@ -34,4 +34,5 @@ maintainers:
   - name: Kasm Technologies, Inc.
     url: https://github.com/kasmtech/kasm-helm
 type: application
+kubeVersion: '>=1.22.0-0'
 version: 1.16.0-develop
