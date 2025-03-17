@@ -1,0 +1,26 @@
+apiVersion: v1
+entries:
+  kasm-single-zone:
+    apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-03-17T14:52:50.446429989Z"
+    description: Kasm is a platform specializing in providing secure browser-based
+      workspaces for a wide range of applications and industries. Its main goal is
+      to provide isolated and secure environments that can be accessed via web browsers,
+      ensuring that users can perform tasks without risking the security of their
+      local systems.
+    digest: aaa8f422593b609ac05125600f54c1712867865d54e6dd1679203d665457f1ee
+    home: https://kasmweb.com
+    icon: https://kasm-static-content.s3.amazonaws.com/icons/kasm-logo-small.png
+    keywords:
+    - kasm
+    - vdi
+    - workspaces
+    maintainers:
+    - name: Kasm Technologies, Inc.
+      url: https://github.com/kasmtech/kasm-helm
+    name: kasm-single-zone
+    urls:
+    - https://github.com/chenbishop/kasm-helm/releases/download/kasm-single-zone-1.16.0-develop/kasm-single-zone-1.16.0-develop.tgz
+    version: 1.16.0-develop
+generated: "2025-03-17T14:52:50.44644669Z"
