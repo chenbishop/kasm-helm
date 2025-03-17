@@ -33,4 +33,5 @@ keywords:
 maintainers:
   - name: Kasm Technologies, Inc.
     url: https://github.com/kasmtech/kasm-helm
+type: application
 version: 1.16.0-develop
