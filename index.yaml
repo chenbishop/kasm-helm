@@ -1,6 +1,20 @@
 apiVersion: v1
 entries:
   kasm-single-zone:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-03-17T20:40:59.933717771Z"
+    description: Kasm is a platform specializing in providing secure browser-based
+      workspaces for a wide range of applications and industries. Its main goal is
+      to provide isolated and secure environments that can be accessed via web browsers,
+      ensuring that users can perform tasks without risking the security of their
+      local systems.
+    digest: 866c27870898142bbc52a61b347530d0dbd8cf296487eb65b2ef78b3f169bc4f
+    name: kasm-single-zone
+    type: application
+    urls:
+    - https://github.com/chenbishop/kasm-helm/releases/download/kasm-single-zone-1.16.0/kasm-single-zone-1.16.0.tgz
+    version: 1.16.0
   - annotations:
       category: Virtual Desktop
       images: |
@@ -68,4 +82,4 @@ entries:
     urls:
     - https://github.com/chenbishop/kasm-helm/releases/download/kasm-single-zone-1.16.0-develop/kasm-single-zone-1.16.0-develop.tgz
     version: 1.16.0-develop
-generated: "2025-03-17T18:51:40.268231595Z"
+generated: "2025-03-17T20:40:59.933728952Z"
