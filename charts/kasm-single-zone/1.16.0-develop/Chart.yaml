@@ -1,6 +1,6 @@
 annotations:
-  catalog.cattle.io/display-name: Kasm
-  catalog.cattle.io/release-name: kasm
+  catalog.cattle.io/display-name: kasm-single-zone
+  catalog.cattle.io/release-name: kasm-single-zone
   images: |
     - name: api-wait-container
       image: alpine/curl:8.8.0
