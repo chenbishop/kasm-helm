@@ -1,29 +1,3 @@
-# Kasm on Kubernetes
-
-**Non-Release branches are not intended for production**
-
-Kasm has been modified to run inside Kubernetes. The service containers will automatically detect they are running in Kubernetes and they will talk directly to each other rather than assume they are talking through an NGINX server as is the case for a normal Kasm deployment. Additionally, components need to talk to the name of the service defined, not to individual containers. A Kubernetes service has a resolvable DNS name that all containers should be able to talk with. API containers will not talk to an individual rdp gateway or guac container, but rather be load balanced to all existing respective containers. The reverse is also true. The API servers have been modified to only return a single entry when guac or rdp gateways call to get a list of API servers.
-
-## Techincal Preview
-
-Kasm Workspaces on Kubernetes is currently in **Technical Preview** for 1.16.0. For this version we recommend organizations try Kasm in Kubernetes on non-production deployments. We welcome any and all feedback in the issue tracker for this project. Kasm deployed to Kubernetes is not supported through normal support contracts until it is out of the Technical Preview phase.
-
-## Branches
-
-This project will contain a branch that matches the release version of the corresponding Kasm Workspaces release. For example, Kasm Workspaces 1.16.0 will have a branch `release/1.16.0` within this project. **Non-release branches should not be used for production.** Be sure to checkout the branch on this project that matches the version of Kasm Workspaces you intend to deploy. Use the default `develop` branch to deploy the [developer preview](https://kasmweb.com/docs/latest/developers/builds.html#developer-preview-builds) build of Kasm Workspaces.
-
-## Current Limitations
-
-The following limitations are still be worked out.
-1. The RDP Gateway component provides native RDP proxying for RDP clients. It is currently not exposed and would require 3389 to be defined in the ingress. We are currently working on an update that will support RDP over HTTPS, which is supported by most RDP clients. Therefore, this will not be required in the future.
-2. After deployment, the administrator needs to login to Kasm, go to Admin->Infrastructure->Zones and set the Upstream Auth
-
-## Helm
-
-A helm chart is used to deploy Kasm. This project contains a Kasm helm chart in the `kasm-single-zone` directory with a templated deployment. Follow the instructions below to deploy this chart.
-
-> ***NOTE:*** There are a few steps that can be performed manually like creating the [namespace](#optional-manually-create-namespace), generating [certificates](#optional-manually-generate-certs-for-deployment), or adding [Docker credentials](#optional-docker-hub-login). Check out the *(Optional)* sections below for reference. These can also be added directly to the `values.yaml` file. Review the settings documentation in the `values.yaml` file for reference.
-
 ## Deploy
 
 The following will deploy Kasm in a single zone configuration.
