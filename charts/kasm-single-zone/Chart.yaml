@@ -1,7 +1,3 @@
-annotations:
-  catalog.cattle.io/display-name: Kasm Workspace
-  catalog.cattle.io/kube-version: '>=1.19-0'
-  catalog.cattle.io/release-name: kasm
 apiVersion: v2
 appVersion: 1.16.0
 name: kasm-single-zone
