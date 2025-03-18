@@ -2,6 +2,10 @@
 
 The following will deploy Kasm in a single zone configuration.
 
+## Prerequisite
+1. StorageClass must be set on the cluster as PVC is needed for the postgres-db. https://documentation.suse.com/cloudnative/virtualization/v1.4/en/storage/storageclass.html
+2. if you would like to expose the app publicly, the ingress controller needs to be installed
+
 ### Edit values.yaml
 
 1. Change the namespace variable if desired (you can also change this by using the `--namespace <namespace name>` when you run the Helm Chart if you do not wish to modify this value)
@@ -13,6 +17,15 @@ The following will deploy Kasm in a single zone configuration.
 7. Review the notes for the remaining settings in the `values.yaml` file and make adjustments as necessary
 
 ### Deploy Helm Chart
+
+values.yaml
+1. set the hostname
+2. add ssl cert
+
+additional steps:
+1. add the ingress address to your dns zone
+2. install agent
+
 
 ```bash
 ## Use this if you manually created the namespace

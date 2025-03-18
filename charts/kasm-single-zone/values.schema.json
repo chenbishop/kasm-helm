@@ -22,6 +22,11 @@
           "title": "hostname",
           "type": "string"
         },
+        "ingressClass": {
+          "default": "",
+          "title": "ingressClass",
+          "type": "string"
+        },
         "image": {
           "additionalProperties": false,
           "properties": {

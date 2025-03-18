@@ -7,6 +7,7 @@ metadata:
     app.kubernetes.io/name: {{ .Values.kasmApp.name }}-ingress
 {{- include "kasm.defaultLabels" . | indent 4 }}
 spec:
+  ingressClassName: {{ .Values.global.ingressClass | default "" }}
   tls:
   - hosts:
       - {{ .Values.global.hostname | quote }}
