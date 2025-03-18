@@ -30,7 +30,7 @@ icon: https://kasm-static-content.s3.amazonaws.com/icons/kasm-logo-small.png
 home: https://kasmweb.com
 kubeVersion: '>=1.19-0'
 sources:
-- https://github.com/kasmtech/kasm-helmQ
+- https://github.com/kasmtech/kasm-helm
 keywords:
 - kasm
 - vdi
