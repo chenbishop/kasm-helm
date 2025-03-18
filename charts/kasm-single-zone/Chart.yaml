@@ -5,7 +5,7 @@ description: Kasm is a platform specializing in providing secure browser-based w
 icon: https://kasm-static-content.s3.amazonaws.com/icons/kasm-logo-small.png
 home: https://kasmweb.com
 maintainers:
-  - name: Kasm Technologies, Inc.
-    url: https://github.com/kasmtech/kasm-helm
+- name: Kasm Technologies, Inc.
+  url: https://github.com/kasmtech/kasm-helm
 type: application
 version: "1.16.0-develop"
