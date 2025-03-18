@@ -1,7 +1,7 @@
 annotations:
   catalog.cattle.io/display-name: Kasm Workspace
   catalog.cattle.io/kube-version: '>=1.19-0'
-  catalog.cattle.io/release-name: coder
+  catalog.cattle.io/release-name: kasm
   category: Virtual Desktop
   images: |
     - name: api-wait-container
