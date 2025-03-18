@@ -6,7 +6,5 @@ apiVersion: v2
 appVersion: 1.16.0
 name: kasm-single-zone
 description: Kasm is a platform specializing in providing secure browser-based workspaces for a wide range of applications and industries. Its main goal is to provide isolated and secure environments that can be accessed via web browsers, ensuring that users can perform tasks without risking the security of their local systems.
-home: https://kasmweb.com
-kubeVersion: '>=1.19-0'
 type: application
 version: "1.16.0-develop"
