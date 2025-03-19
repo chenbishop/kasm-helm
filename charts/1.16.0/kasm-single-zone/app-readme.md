@@ -14,9 +14,9 @@ The `kasm-single-zone` Helm chart simplifies the deployment of a single-zone Kas
 
 
 ## Getting Started
-Review the Kasm helm chart [installation instruction](https://github.com/kasmtech/kasm-helm) for detailed instruction and options for the [values.yaml](https://github.com/kasmtech/kasm-helm/blob/release/1.16.0/kasm-single-zone/values.yaml) used by the chart.
+Review the Kasm helm chart [installation instruction](https://github.com/chenbishop/kasm-helm) for detailed instruction and options for the [values.yaml](https://github.com/kasmtech/kasm-helm/blob/release/1.16.0/kasm-single-zone/values.yaml) used by the chart.
 
 
 ## Resources
 -   [Kasm Workspaces Documentation](https://www.kasmweb.com/docs/latest/index.html)
--   [Kasm Helm Chart](https://github.com/kasmtech/kasm-helm)
+-   [Kasm Helm Chart](https://github.com/chenbishop/kasm-helm)
