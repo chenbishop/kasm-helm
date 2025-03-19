@@ -6,14 +6,24 @@ The following will deploy Kasm in a single zone configuration.
 StorageClass for Persistent Volume Claims (PVC): A StorageClass must be configured in the cluster to create Persistent Volume Claims (PVC) for the postgres-db. For detailed instructions, refer to the [Rancher Docs](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/manage-clusters/create-kubernetes-persistent-storage).
 
 ## Deploy Helm Chart
-Please refer to values.yaml for available Helm values and their defaults.
+Refer to the [values.yaml](https://github.com/chenbishop/kasm-helm/blob/main/charts/1.16.0/kasm-single-zone/values.yaml) for available Helm values and their default configurations.
 
-values.yaml
-1. set the hostname
-2. add ssl cert
-3. add ingress class
+To begin, it's recommended to start by adding the global.hostname value in the values.yaml file. This will set the hostname for TLS certificates and the ingress URL.
 
-additional steps:
-1. add the ingress address to your dns zone
-2. install agent
-Please refer to [values.yaml]() for available Helm values and their defaults.
+## Next Steps
+Once the Helm chart is fully deployed, add the ingress IP address to your DNS zone. After that, you should be able to access your Kasm instance at https://{hostname}, for example: https://kasm.example.com.
+
+### Login Kasm Admin Console
+The default admin username is `admin@kasm.local`. To retrieve the password, run the following kubectl command:
+```
+kubectl get secret --namespace {namespace} kasm-secrets -o jsonpath="{.data.admin-password}" | base64 -d
+```
+
+### Install Agent
+Kasm agents are responsible for issuing compute resources, and they need to be deployed separately on a dedicated VM (Kasm does not currently support deploying the agent in Kubernetes). For a detailed installation guide, refer to the Kasm Agent Documentation.
+
+To retrieve the manager token, use the following kubectl command:
+``
+kubectl get secret --namespace {namespace} kasm-secrets -o jsonpath="{.data.manager-token}" | base64 -d
+``
+
