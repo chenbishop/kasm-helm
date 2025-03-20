@@ -8,8 +8,6 @@ global:
   ##
   namespace: ""
   clusterDomain: "cluster.local"
-  ingressClass: ""
-
   ## @param global.image.pullSecrets Global Docker registry secret name
   ## @param global.image.pullPolicy Global image pull policy
   ## @param global.image.restartPolicy Global image restart policy
