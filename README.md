@@ -1,12 +1,12 @@
 ## Deploy
 
-The following will deploy Kasm in a single zone configuration.
+The following will deploy Kasm in your Kubernetes environment.
 
 ## Prerequisite
 StorageClass for Persistent Volume Claims (PVC): A StorageClass must be configured in the cluster to create Persistent Volume Claims (PVC) for the postgres-db. For detailed instructions, refer to the [Rancher Docs](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/manage-clusters/create-kubernetes-persistent-storage).
 
 ## Deploy Helm Chart
-Refer to the [values.yaml](https://github.com/chenbishop/kasm-helm/blob/main/charts/kasm-single-zone/values.yaml) for available Helm values and their default configurations.
+Refer to the [values.yaml](https://github.com/chenbishop/kasm-helm/blob/main/charts/kasm-demo/values.yaml) for available Helm values and their default configurations.
 
 To begin, it's recommended to start by adding the global.hostname value in the values.yaml file. This will set the hostname for TLS certificates and the ingress URL.
 
