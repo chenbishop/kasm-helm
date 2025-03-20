@@ -1,8 +1,8 @@
 {
-  "additionalProperties": true,
+  "additionalProperties": false,
   "properties": {
     "global": {
-      "additionalProperties": true,
+      "additionalProperties": false,
       "properties": {
         "altHostnames": {
           "items": {
