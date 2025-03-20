@@ -26,4 +26,4 @@ To retrieve the manager token, use the following kubectl command:
 ``
 kubectl get secret --namespace {namespace} kasm-secrets -o jsonpath="{.data.manager-token}" | base64 -d
 ``
-
+ 
